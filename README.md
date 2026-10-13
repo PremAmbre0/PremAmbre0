@@ -1,6 +1,4 @@
-<p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:252E27,100:A8546F&height=190&section=header&text=Prem%20Ambre&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=idea%20%E2%86%92%20architecture%20%E2%86%92%20infra%20%E2%86%92%20UI&descSize=18&descAlignY=58&animation=fadeIn" />
-</p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:252E27,100:A8546F&height=190&section=header&text=Prem%20Ambre&fontSize=52&fontColor=ffffff&fontAlignY=36&desc=idea%20%E2%86%92%20architecture%20%E2%86%92%20infra%20%E2%86%92%20UI&descSize=18&descAlignY=58&animation=fadeIn" />
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=24&duration=3000&pause=1200&color=A8546F&center=true&vCenter=true&width=760&lines=Full-stack+engineer;I+bring+ideas+to+life;and+keep+the+systems+behind+them+honest;scalable+%C2%B7+modular+%C2%B7+secure;Go+%C2%B7+TypeScript+%C2%B7+Next.js+%C2%B7+GCP+%C2%B7+Claude" />
@@ -15,21 +13,38 @@
 
 ---
 
-```ts
-const prem = {
-  role: "Full-stack engineer",
-  domain: ["insurance", "reinsurance"],
-  builds: ["system architecture", "cloud infrastructure", "event-driven services", "the interface on top"],
-  stack: {
-    languages: ["TypeScript", "Go", "Python"],
-    frontend: ["React", "Next.js", "Vue", "Nuxt"],
-    data: ["PostgreSQL", "BigQuery", "MongoDB"],
-    cloud: ["GCP", "Firebase", "AWS"],
-    ai: ["Claude", "Gemini", "tool use", "agents"],
-  },
-  defaults: { authority: "server", failure: "closed", parts: "modular" },
-  motto: "Bring the idea to life. Keep the system behind it scalable, modular and secure.",
-} as const;
+```hcl
+resource "engineer" "prem_ambre" {
+  role   = "Full-stack engineer"
+  domain = ["insurance", "reinsurance"]
+
+  builds = [
+    "system architecture",
+    "cloud infrastructure",
+    "event-driven services",
+    "the interface on top",
+  ]
+
+  stack {
+    languages = ["TypeScript", "Go", "Python"]
+    frontend  = ["React", "Next.js", "Vue", "Nuxt"]
+    data      = ["PostgreSQL", "BigQuery", "MongoDB"]
+    cloud     = ["GCP", "Firebase", "AWS"]
+    ai        = ["Claude", "Gemini", "tool use", "agents"]
+  }
+
+  defaults {
+    authority = "server"
+    failure   = "closed"
+    parts     = "modular"
+  }
+
+  motto = "Bring ideas to life. Keep them scalable, modular, secure."
+
+  lifecycle {
+    prevent_destroy = true
+  }
+}
 ```
 
 ## ⚡ Now
@@ -85,6 +100,4 @@ Since 2022 I've gone from leading frontend architecture to owning systems end to
 
 <p align="center"><i>Off-keyboard: cooking and gaming.</i></p>
 
-<p align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:A8546F,100:252E27&height=110&section=footer" />
-</p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:A8546F,100:252E27&height=110&section=footer" />
